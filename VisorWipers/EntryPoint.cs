@@ -9,6 +9,7 @@ using VisorWipers.Vanilla;
 namespace VisorWipers
 {
     [BepInPlugin("Dinorush." + MODNAME, MODNAME, "1.0.0")]
+    [BepInDependency("dev.gtfomodding.gtfo-api", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency(ARCHIVE_GUID, BepInDependency.DependencyFlags.SoftDependency)]
     internal sealed class EntryPoint : BasePlugin
     {
